@@ -1,0 +1,21 @@
+.icon-logo {
+  transition: 0.2s ease all;
+  width: 25px;
+  opacity: 0.5;
+  cursor: pointer;
+
+  &:not(.noState) {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &.noState {
+    cursor: default;
+    opacity: 1;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}

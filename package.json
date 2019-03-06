@@ -1,0 +1,15 @@
+{
+  "name": "@matreva/doctor-ui",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd packages/main && yarn start",
+    "build": "cd packages/main && yarn build",
+    "start": "node packages/server",
+    "dev:server": "cd packages/server && yarn dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

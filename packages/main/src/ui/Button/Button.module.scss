@@ -1,0 +1,27 @@
+.spinner {
+  margin-left: 12px;
+}
+
+.ghost {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #464646;
+  box-shadow: none;
+  padding: 0;
+  &:hover {
+    color: #464646 !important;
+    background: none !important;
+  }
+}
+
+.outline {
+  background: none;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+}
+.primary {
+  /*! keep */
+}
+

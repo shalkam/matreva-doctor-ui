@@ -1,0 +1,33 @@
+.wrapper {
+  margin-bottom: 15px;
+
+  .input {
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--mediumGray);
+    margin-top: 4px;
+    width: 80%;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+
+    &.invalid {
+      border: 1px solid red;
+    }
+  }
+
+  .label {
+    font-size: 18px;
+  }
+
+  .errorMessage {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #ff0033;
+    height: 18px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,29 @@
+@import '~bootstrap/scss/_functions';
+@import '~bootstrap/scss/_variables';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  .content {
+    display: flex;
+    flex-grow: 1;
+  }
+  .main {
+    flex-grow: 1;
+    overflow-y: auto;
+    @include media-breakpoint-down(sm) {
+      margin-left: 10px !important;
+    }
+  }
+  .sidebar-toggler {
+    position: fixed;
+    z-index: 5;
+    top: 15px;
+    left: 15px;
+    svg {
+      animation-duration: 150ms;
+    }
+  }
+}

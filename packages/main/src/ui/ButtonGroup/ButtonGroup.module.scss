@@ -1,0 +1,107 @@
+.buttonGroup {
+  display: inline-block;
+
+  .buttonItem {
+    height: 34px;
+    line-height: 12.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    float: left;
+    font-weight: 400;
+    letter-spacing: 0;
+    background-color: var(--lightBackGray);
+    color: var(--gray);
+    box-shadow: none;
+
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:last-child {
+      border-radius: 0 5px 5px 0;
+      border-right: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    &.selected {
+      background-color: var(--orange);
+      color: #fff;
+    }
+
+    &.disabled {
+      background-color: var(--lightBackGray);
+      color: var(--darkGray);
+      cursor: not-allowed;
+    }
+  }
+}
+
+.buttonGroup-secondary {
+  display: inline-block;
+  border-radius: 100px;
+  box-shadow: 0 13px 20px 0 #ff824e !important;
+
+  .buttonItem {
+    height: 55px;
+    background-color: #f3f3ff;
+    border-radius: 0;
+    color: transparent;
+    box-shadow: none;
+    border: none;
+    color: #6c63ff;
+
+    &:first-child {
+      border-radius: 100px 0 0 100px;
+    }
+
+    &:last-child {
+      border-radius: 0 100px 100px 0;
+    }
+
+    &:hover {
+      background-color: #f3f3ff !important;
+      border-color: transparent !important;
+      color: #6c63ff !important;
+      box-shadow: 0 0 2px 0 rgba(44, 47, 51, 0.15), 0 3px 26px 0 #d9d9df;
+    }
+
+    &.selected {
+      color: #fff;
+      background-color: #6c63ff;
+      position: relative;
+      border-radius: 40px;
+
+      // &:before {
+      //   position: absolute;
+      //   z-index: 1;
+      //   content:"";
+      //   text-align: center;
+      //   background-color: #6c63ff;
+      //   color: #fff;
+      //   top: 0;
+      //   left: 0;
+      //   width: 20px;
+      //   height: 100%;
+      //   border-radius: 100px 0 0 100px;
+      //   line-height: 55px;
+      //   // box-shadow: 0 13px 20px 0 #ff824e;
+      // }
+    }
+
+    .overlay {
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      background-color: #6c63ff;
+      color: #fff;
+      top: 0;
+      left: -10%;
+      width: 120%;
+      height: 100%;
+      border-radius: 100px;
+      line-height: 55px;
+      box-shadow: 0 13px 20px 0 #ff824e;
+    }
+  }
+}

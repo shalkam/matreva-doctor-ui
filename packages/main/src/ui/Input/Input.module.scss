@@ -1,0 +1,29 @@
+.input {
+  display: block;
+  padding: 10px;
+  outline: none;
+  border: 1px solid var(--mediumGray);
+  margin-top: 4px;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.invalidInput {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  font-size: 12px;
+  margin-top: 5px;
+  color: red;
+  height: 18px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
